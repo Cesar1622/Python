@@ -23,7 +23,7 @@ def main():
     
     def calc(k):
 
-        functions = ['sin', 'cos', 'tan', 'sqrt', 'pi']    
+        functions = ['sin', 'cos', 'tan', 'sqrt', 'pi']   
         
         for i in functions:
             if i in k.lower():
@@ -33,7 +33,7 @@ def main():
         try:
             k = eval(k)
         except ZeroDivisionError:
-            print ("Can't divide by 0")
+            print ("Can't divide by 0") #Print out if the user input 0
             exit()
         except NameError:
             print ("Invalid input")
